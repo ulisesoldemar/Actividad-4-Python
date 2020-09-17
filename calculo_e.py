@@ -1,10 +1,13 @@
-def factorial(n:int):
-    if n == 0 or n == 1:
-        return 1
+def calculo_factorial(n:int):
+    factorial = 1
+    if n >= 1:
+        for i in range(1, n+1):
+            factorial = factorial * i
+            
     elif n < 0:
         return ValueError
-    else:
-        return n * factorial(n - 1)
+
+    return factorial
 
 while True:
     try:
@@ -15,7 +18,7 @@ while True:
             print("El límite debe ser mayor a 0.") 
             continue
         while n < limite:
-            e += 1/factorial(n)
+            e += 1/calculo_factorial(n)
             n += 1
         break
     except ValueError:
