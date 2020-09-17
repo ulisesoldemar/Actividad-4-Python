@@ -11,13 +11,13 @@ def main():
         opt = input("Selecciona una opción: ")
         if opt == '1':
             area_cuadrado()
-            break
+            continue
         elif opt == '2':
             area_triangulo()
-            break
+            continue
         elif opt == '3':
             area_circulo()
-            break
+            continue
         elif opt == '4':
             print("Hasta luego.")
             break
